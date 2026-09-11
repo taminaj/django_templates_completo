@@ -3,12 +3,14 @@
 <head>
     <title>{% block title %}Mi Proyecto{% endblock %}</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="{% url 'inicio:inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'app1:app1' %}">Vista 1 App 1</a></li>
+            <li><a href="{% url 'app1:app1' %}">Vista 2 App 1</a></li>
         </ul>
     </nav>
     {% block content %}
